@@ -1,0 +1,5 @@
+@import "~bulma/bulma";
+
+.progress::-webkit-progress-value {
+    transition: width 0.5s ease;
+}

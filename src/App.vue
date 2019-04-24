@@ -157,7 +157,8 @@
     name: 'app',
     data() {
       return {
-        info: null,
+        model: {Uncool:0, Cool:0, Undecided:0},
+        info: {},
         max: 0,
         isFetched: false,
         posting: false
@@ -168,7 +169,7 @@
         axios
           .get(url)
           .then(response => {
-            this.info = response.data.Item;
+            this.info = response.data ? response.data : this.model;
             this.max = (this.info.Uncool || 0) + (this.info.Cool || 0) + (this.info.Undecided || 0);
             this.isFetched = true;
           })

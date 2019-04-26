@@ -151,7 +151,7 @@
 
 <script>
   const axios = require('axios');
-  const url = 'https://it2s7ol3k7.execute-api.us-east-1.amazonaws.com/Prod/'
+  const url = 'https://e5i147mdod.execute-api.us-west-2.amazonaws.com/Prod/'
   import { setInterval } from 'timers';
   export default {
     name: 'app',

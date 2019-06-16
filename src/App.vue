@@ -11,7 +11,8 @@
           </h2>
         </div>
       </div>
-      <div class="container is-hidden-mobile" v-if="isFetched">
+      <div class="is-hidden-mobile" v-if="isFetched">
+        <div class="container">
         <nav class="level">
           <div class="level-item has-text-centered">
             <div>
@@ -38,6 +39,7 @@
             </div>
           </div>
         </nav>
+        </div>
       </div>
     </section>
     <section class="section" v-if="isFetched">

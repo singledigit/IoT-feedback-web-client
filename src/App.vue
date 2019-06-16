@@ -151,7 +151,7 @@
 
 <script>
   const axios = require('axios');
-  const url = 'https://5hcflhihrk.execute-api.us-west-2.amazonaws.com/Prod/'
+  const url = process.env.VUE_APP_API_ENDPOINT
   import { setInterval } from 'timers';
   export default {
     name: 'app',
